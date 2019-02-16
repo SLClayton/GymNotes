@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/chartSpinner"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textView32"
+            android:layout_toEndOf="@+id/textView32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chart Type:"
+            android:id="@+id/textView32"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="10sp"
+            android:textColor="?android:textColorPrimary"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_below="@+id/relativeLayout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/rangeChooser"
+            android:layout_marginBottom="10dp">
+            <RadioButton
+                android:layout_width="40sp"
+                android:layout_height="25sp"
+                android:text="@string/all"
+                android:button="@android:color/transparent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="5sp"
+                android:checked="false"
+                android:id="@+id/radio_all"
+                android:background="?date_toggle"
+                android:textColor="@drawable/date_toggle_text" />
+            <RadioButton
+                android:layout_width="40sp"
+                android:layout_height="25sp"
+                android:text="@string/OneYear"
+                android:checked="false"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginRight="5sp"
+                android:background="?date_toggle"
+                android:textColor="@drawable/date_toggle_text"
+                android:id="@+id/radio_1y" />
+            <RadioButton
+                android:layout_width="40sp"
+                android:layout_height="25sp"
+                android:text="@string/_6m"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginRight="5sp"
+                android:checked="false"
+                android:id="@+id/radio_6m"
+                android:background="?date_toggle"
+                android:textColor="@drawable/date_toggle_text" />
+
+            <RadioButton
+                android:layout_width="40sp"
+                android:layout_height="25sp"
+                android:text="@string/_3m"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginRight="5sp"
+                android:id="@+id/radio_3m"
+                android:checked="false"
+                android:background="?date_toggle"
+                android:textColor="@drawable/date_toggle_text" />
+
+            <RadioButton
+                android:layout_width="40sp"
+                android:layout_height="25sp"
+                android:text="@string/_1m"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginRight="5sp"
+                android:id="@+id/radio_1m"
+                android:checked="false"
+                android:background="?date_toggle"
+                android:textColor="@drawable/date_toggle_text"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/leftColumn"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/selectedPoint">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/selected_point"
+                        android:id="@+id/textView33"
+                        android:gravity="center"
+                        android:autoText="false"
+                        android:textColor="?android:textColorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="5sp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/valuecolon"
+                            android:id="@+id/textView29"
+                            android:textColor="?android:textColorPrimary"
+                            android:layout_marginRight="5sp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/elipses"
+                            android:id="@+id/value"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:minLines="2"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/workoutcolon"
+                            android:id="@+id/textView30"
+                            android:textColor="?android:textColorPrimary"
+                            android:layout_marginRight="5sp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/elipses"
+                            android:id="@+id/workout"
+                            android:gravity="center"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="?android:textColorPrimaryDisableOnly"
+                android:layout_margin="5dp"
+                android:id="@+id/middleDivider"></FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/rightColumn"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/XAxisToday"
+                            android:checked="false"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/end_x_axis_on_today"
+                            android:textColor="?android:textColorPrimary"
+                            android:gravity="left|center_vertical" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/YAxisZero"
+                            android:checked="false"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/start_y_axis_at_0"
+                            android:textColor="?android:textColorPrimary"
+                            android:gravity="left|center_vertical" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

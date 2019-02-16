@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="CustomStyleable">
+        <attr name="foreground" format="color"/>
+        <attr name="foreground2" format="color"/>
+        <attr name="foreground3" format="color"/>
+
+        <attr name="text_error" format="color"/>
+
+        <attr name="date_toggle" format="reference" />
+
+    </declare-styleable>
+
+</resources>

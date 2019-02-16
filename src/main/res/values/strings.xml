@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">Gym Notes</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dialog_new_excersise">dialog_newExcersise</string>
+    <string name="title_activity_icon_chooser">IconChooser</string>
+    <string name="title_activity_theme_chooser">ThemeChooser</string>
+    <string name="title_activity_activity__workout_view">activity_WorkoutView</string>
+    <string name="title_activity_dialog_are_you_sure">dialog_are_you_sure</string>
+    <string name="title_activity_activity__set_view">activity_SetView</string>
+    <string name="title_activity_dialog_date_picker">dialog_date_picker</string>
+    <string name="title_activity_dialog_new_set">dialog_new_set</string>
+    <string name="title_activity_dialog_edit_note">dialog_edit_note</string>
+
+
+    <string name="TABLE_EXERCISE">Exercise_Table</string>
+    <string name="TABLE_WORKOUT">Workout_Table</string>
+    <string name="TABLE_SET">Set_Table</string>
+    <string name="TABLE_GROUP">Group_Table</string>
+    <string name="TABLE_GROUP_EXERCISES">Group_Exercises_Table</string>
+    <string name="ICON_DIRECTORY">icons</string>
+
+    <string-array name="units">
+        <item>kg</item>
+        <item>lb</item>
+    </string-array>
+
+    <string name="LbKgRatio">2.2</string>
+
+    <string name="title_activity_dialog_convert">dialog_convert</string>
+
+    <string name="test_device_id">050F1D7BD0F3BA8628E4BC7CC260D962</string>
+    <string name="banner_ad_id">ca-app-pub-5088405689898534/8771468606</string>
+    <string name="banner_ad_id_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="AppID">ca-app-pub-5088405689898534~5818002201</string>
+    <string name="public_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgcCD9Da10VEWR6UFpSj2DLu2oBWwTqv1cVQ7HQeAxjGAfUkqyMT87ekM0gCPX3OxiDlNSD51PfNAQz9djEcNaYry/iafXWbeg+eyWYS93VuW47qZx/eCt6NWzrAR/lNDo87g8nMK7IePodpbw9ZzS6PTHFctWDtLqayH9m+MVHXzHq6Ou+l/VXprYLUxvc4ThGTlOUIWvuMVycLYlWHkIwyL4SB7f6f7SQ3GzlKITTIsHEvBhR1iIjOseAZwd73V5jGWSvP5swfxHIOjPapxa1rpTdyP61sWqrja38Pmk5TVL2qOCgPKur2XTUm9YKT/08n4qgkvE09K5jnGk3CGswIDAQAB</string>
+
+
+    <string name="title_activity_info">info</string>
+    <string name="shared_preferences">GymNotesSharedPrefs</string>
+    <string name="color_theme">ColorThemePref</string>
+
+    <string name="About">By ClaytApp\n\nIf you enjoy this app please consider rating it on the google play store. To report bugs or make suggestions, email me at ClaytonApplication@Gmail.com\n</string>
+    <string name="Icons">All exercise icons are taken from Everkinetic under Creative Commons. Their website can be found at db.everkinetic.com.\nFor more more details on this license visit http://creativecommons.org/licenses/by-sa/3.0/deed.en_US\n\nRubbish Bin icon by Icon Works from www.flaticon.com</string>
+    <string name="Welcome">Welcome to Gym Notes!\nBegin by creating an exercise.</string>
+    <string name="NoWorkouts">No Workouts</string>
+    <string name="NoSets">No Sets</string>
+    <string name="Never">No Workouts</string>
+    <string name="SortByName">Sort by name</string>
+    <string name="SortByDate">Sort by date</string>
+    <string name="Edit">EDIT</string>
+    <string name="EditSet">Edit Set</string>
+    <string name="Done">Done</string>
+    <string name="NewSet">New Set</string>
+    <string name="EditWorkout">Edit Workout</string>
+    <string name="WorkoutNote">Workout note</string>
+    <string name="noIconSelected">No icon selected</string>
+    <string name="info">Info</string>
+    <string name="sort">Sort</string>
+    <string name="IconChooser">Icon Chooser</string>
+    <string name="Info">Info</string>
+    <string name="EditExercise">Edit exercise</string>
+    <string name="Stats">Stats</string>
+    <string name="loading">Loading...</string>
+    <string name="rep">rep</string>
+    <string name="NA">N/A</string>
+    <string name="elipses">...</string>
+    <string name="reps">reps</string>
+    <string name="more">more</string>
+    <string name="less">less</string>
+    <string name="personal_bests">Personal Bests</string>
+    <string name="Workouts">Workouts</string>
+    <string name="Graph">Graph</string>
+    <string name="Date">Date</string>
+    <string name="all">All</string>
+    <string name="OneYear">1y</string>
+    <string name="_6m">6m</string>
+    <string name="_3m">3m</string>
+    <string name="_1m">1m</string>
+    <string name="Estimated_One_Rep_Max">Estimated 1Rep Max</string>
+    <string name="Total_reps">Total Reps</string>
+    <string name="Total_weight_lifted">Total Weight Lifted</string>
+    <string name="max_weight_lifted">Max Weight Lifted</string>
+    <string name="New">New</string>
+    <string name="Today">Today</string>
+    <string name="Past">Past</string>
+    <string name="date">date</string>
+    <string name="name">name</string>
+    <string name="upNext">Up Next</string>
+    <string name="AtoZ">A-Z</string>
+    <string name="TotalSets">Total Sets</string>
+    <string name="note">Note</string>
+    <string name="ConvertQuestion">Convert?</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Dontconvert">Don\'t Convert</string>
+    <string name="convert">Convert</string>
+    <string formatted="true" name="ConvertMessage">You have changed your unit from %1$s to %2$s for this exercise.\n\nWould you like to convert the value of all the weights in this exercise to the new unit, or leave the values exactly the same.</string>
+    <string name="start_y_axis_at_0">Start Y axis at 0</string>
+    <string name="selected_point">Selected Point</string>
+    <string name="value">Value:</string>
+    <string name="workoutcolon">Workout:</string>
+    <string name="valuecolon">value:</string>
+    <string name="lt_15_reps"><![CDATA[(<15 reps)]]></string>
+    <string name="end_x_axis_on_today">End X axis on today</string>
+    <string name="version">version</string>
+    <string name="ThemeChooser">Theme Chooser</string>
+    <string name="color_themes">Color themes</string>
+    <string name="pro_purchase_token">pro_purchase_token</string>
+    <string name="pro_purchase_id">pro</string>
+    <string name="shared_preferences_pro">pro</string>
+    <string name="_default">default</string>
+    <string name="unlock_pro">Unlock Pro</string>
+    <string name="Theme_advert_massage">Unlock Gym Notes Pro to enable Cloud Backup/Restore and gain access to a range of color themes!</string>
+    <string name="title_dialog_theme_advert">Theme Ad</string>
+    <string name="remove_ads">Remove ads</string>
+    <string name="where_to_find_unlock">You can unlock Gym Notes pro by going to the top right drop down menu from the main screen of this app.</string>
+    <string name="get_it_free">Want to unlock Gym Notes Pro for free?\nDownload the Google Opinion Rewards app to earn free Google play credit to use on unlocking Gym Notes pro and other store items.</string>
+    <string name="download_rewards">Download Google Opinion Rewards</string>
+    <string name="sku_pro">pro</string>
+    <string name="no_thank_you">No thank you</string>
+    <string name="first_open">firstTimeAppOpen</string>
+    <string name="get_pro">Get pro</string>
+    <string name="Exercise_View">Exercise View</string>
+    <string name="GROUP_VIEW">Group View</string>
+    <string name="archive">Archive</string>
+    <string name="archivedexercises">Archived Exercises</string>
+    <string name="gym_notes_pro">Gym Notes Pro</string>
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_stroke"
+    android:padding="1dp"
+    tools:context=".dialogs.edit_exercise">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/TopBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?colorPrimary"
+            android:baselineAligned="false"
+            android:minHeight="50dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="5">
+
+            <RelativeLayout
+                android:id="@+id/delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/Header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Header"
+                    android:textColor="?android:textColorPrimaryInverse"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/delete_button"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:contentDescription="Delete Button"
+                    android:onClick="gotoAreYouSure"
+                    android:padding="5dp"
+                    android:src="@drawable/delete_button" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/insertName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Group Name"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColor="?android:textColorPrimary" />
+
+            <ScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/dialog_stroke"
+                android:fadeScrollbars="false"
+                android:scrollIndicators="right"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true">
+
+                <LinearLayout
+                    android:id="@+id/choose_exercise_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </ScrollView>
+
+            <Button
+                android:id="@+id/new_exercise_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/group_new_exercise_button"
+                android:onClick="openNewExerciseDialog"
+                android:text="New Exercise"
+                android:textColor="?android:textColorPrimary" />
+
+            <TextView
+                android:id="@+id/ErrorMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="ERROR MESSAGE"
+                android:textColor="?text_error"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:textColorPrimaryDisableOnly"></FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/Buttons"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_button"
+                android:clickable="true"
+                android:onClick="cancel">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Cancel"
+                    android:textColor="?android:textColorPrimary" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="?android:textColorPrimaryDisableOnly" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_button"
+                android:clickable="true"
+                android:onClick="done">
+
+                <TextView
+                    android:id="@+id/FinishButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Finish"
+                    android:textColor="?android:textColorPrimary" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

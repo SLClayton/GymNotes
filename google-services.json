@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "15229066002",
+    "firebase_url": "https://gym-notes-b0002.firebaseio.com",
+    "project_id": "gym-notes-b0002",
+    "storage_bucket": "gym-notes-b0002.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15229066002:android:84acbdff5f7ff7cb",
+        "android_client_info": {
+          "package_name": "sam.gymnotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15229066002-dv6p0mngdajhhs2eq5j5bpd9npvbp0i8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0JR4UtEARgxwamKnhkzHkcwQftCE4cwY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

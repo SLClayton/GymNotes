@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".dialogs.edit_exercise"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:background="@drawable/dialog_stroke"
+    android:padding="1dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?colorPrimary"
+            android:id="@+id/TopBar"
+            android:minHeight="50dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:padding="5dp"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/delete">
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Header"
+                    android:id="@+id/Header"
+                    android:textColor="?android:textColorPrimaryInverse"
+                    android:textSize="25dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/delete_button"
+                    android:padding="5dp"
+                    android:onClick="gotoAreYouSure"
+                    android:src="@drawable/delete_button"
+                    android:contentDescription="Delete Button"
+                    android:clickable="true" />
+
+                </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/options"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:id="@+id/insertName"
+                android:hint="Excersie Name"
+                android:textColor="?android:textColorPrimary" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/ChooseUnit"
+                    android:weightSum="2"
+                    android:paddingBottom="7dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weight Increment"
+                        android:id="@+id/textView9"
+                        android:gravity="center"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/textView11"
+                        android:layout_toLeftOf="@+id/textView11"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Unit"
+                        android:id="@+id/textView11"
+                        android:gravity="center"
+                        android:textSize="12dp"
+                        android:textColor="?android:textColorPrimary"
+                        android:layout_alignTop="@+id/textView9"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/ChooseIncrement"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerIncrement"
+                        android:background="@drawable/drop_down_view"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp" />
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerUnit"
+                        android:background="@drawable/drop_down_view"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/ChooseIcon"
+                android:paddingTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Icon\n(click to change) "
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="12dp"
+                    android:textIsSelectable="false"
+                    android:paddingBottom="5dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/icon"
+                        android:clickable="true"
+                        android:onClick="gotoIconChooser"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="@string/noIconSelected"
+                        android:id="@+id/noIcon"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="?android:textColorPrimaryDisableOnly"
+                        android:textSize="20sp" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ErrorMessage"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="?text_error"
+                android:text="ERROR MESSAGE"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:textColorPrimaryDisableOnly"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:weightSum="2"
+            android:id="@+id/Buttons">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_button"
+                android:onClick="cancel"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:id="@+id/textView2"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="?android:textColorPrimary"/>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="?android:textColorPrimaryDisableOnly" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_button"
+                android:onClick="done"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finish"
+                    android:id="@+id/FinishButton"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="?android:textColorPrimary"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

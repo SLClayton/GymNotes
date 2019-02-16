@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:onClick="moreLessButton">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/bigIconContainer"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/bigIcon"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/test_image"
+                    android:tint="@color/black"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:id="@+id/summary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;Exercise name>"
+                    android:id="@+id/exerciseName"
+                    android:layout_gravity="center"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="First Workout:"
+                            android:id="@+id/textView24"
+                            android:textColor="?android:textColorPrimary"
+                            android:layout_marginBottom="1sp"
+                            android:textSize="@dimen/abc_text_size_small_material" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Workouts:"
+                            android:id="@+id/textView4"
+                            android:textColor="?android:textColorPrimary"
+                            android:layout_marginBottom="1sp"
+                            android:textSize="@dimen/abc_text_size_small_material" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sets:"
+                            android:id="@+id/textView6"
+                            android:textColor="?android:textColorPrimary"
+                            android:layout_marginBottom="1sp"
+                            android:textSize="@dimen/abc_text_size_small_material" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Reps:"
+                            android:id="@+id/textView14"
+                            android:textColor="?android:textColorPrimary"
+                            android:layout_marginBottom="1sp"
+                            android:textSize="@dimen/abc_text_size_small_material" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Weight:"
+                            android:id="@+id/textView20"
+                            android:textColor="?android:textColorPrimary"
+                            android:layout_marginBottom="1sp"
+                            android:textSize="@dimen/abc_text_size_small_material" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/loading"
+                            android:id="@+id/firstWorkout"
+                            android:textColor="?android:textColorSecondary"
+                            android:layout_marginBottom="1sp"
+                            android:textSize="@dimen/abc_text_size_small_material" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/loading"
+                            android:id="@+id/workouts"
+                            android:textColor="?android:textColorSecondary"
+                            android:layout_marginBottom="1sp"
+                            android:textSize="@dimen/abc_text_size_small_material" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/loading"
+                            android:id="@+id/totalSets"
+                            android:textColor="?android:textColorSecondary"
+                            android:layout_marginBottom="1sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/loading"
+                            android:id="@+id/totalReps"
+                            android:textColor="?android:textColorSecondary"
+                            android:layout_marginBottom="1sp"
+                            android:textSize="@dimen/abc_text_size_small_material" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/loading"
+                            android:id="@+id/totalWeight"
+                            android:textColor="?android:textColorSecondary"
+                            android:layout_marginBottom="1sp"
+                            android:textSize="@dimen/abc_text_size_small_material" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:divider"
+            android:id="@+id/divider"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best Set:"
+                    android:id="@+id/textView27"
+                    android:textColor="?android:textColorPrimary"
+                    android:gravity="center"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:layout_gravity="center"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_weight="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                    android:id="@+id/bestSet"
+                    android:gravity="center"
+                    android:layout_marginBottom="1sp"
+                    android:textSize="@dimen/abc_text_size_medium_material" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bestSetTime"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:text="@string/loading"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:divider"
+            android:id="@+id/divider2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/linearLayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_bests"
+                    android:id="@+id/textView26"
+                    android:textColor="?android:textColorPrimary"
+                    android:gravity="center"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentStart="false"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/moreLessButton"
+                    android:tint="?android:textColorPrimaryDisableOnly"
+                    android:layout_toRightOf="@+id/textView26"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/more_less_toggle"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:textOn=""
+                    android:textOff=""/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/repNumber"
+                            android:textSize="@dimen/abc_text_size_small_material"
+                            android:textColor="?android:textColorPrimary"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Estimated"
+                            android:id="@+id/estimated"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/abc_text_size_small_material"
+                            android:textColor="?android:textColorPrimary" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Actual"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/abc_text_size_small_material"
+                            android:textColor="?android:textColorPrimary" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/personalBests">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="?android:textColorSecondary" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

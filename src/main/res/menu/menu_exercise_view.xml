@@ -1,0 +1,82 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <item
+        android:id="@+id/list_type"
+        android:title="Group View"
+        android:orderInCategory="0"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sort"
+        android:title="@string/sort"
+        android:orderInCategory="1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/generate_example"
+        android:title="Generate example"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/themes"
+        android:title="@string/color_themes"
+        android:orderInCategory="3"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/buy_pro"
+        android:title="@string/gym_notes_pro"
+        android:orderInCategory="4"
+        app:showAsAction="never" />
+
+
+
+
+    <item
+        android:id="@+id/backup"
+        android:title="@string/backup"
+        android:orderInCategory="6"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/restore"
+        android:title="@string/restore"
+        android:orderInCategory="7"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/info"
+        android:title="@string/info"
+        android:orderInCategory="10"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/archive"
+        android:title="@string/archive"
+        android:orderInCategory="11"
+        app:showAsAction="never" />
+
+
+
+<!--
+    <item
+        android:id="@+id/remove_pro"
+        android:title="remove_pro"
+        android:orderInCategory="99"
+        app:showAsAction="never" />
+
+-->
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground">
+
+    <android.support.v7.widget.Toolbar
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="?colorPrimary">
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:id="@+id/message"
+            android:layout_centerVertical="true"
+            android:textColor="?android:textColorSecondary"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_gravity="center" />
+
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/List"
+            android:layout_gravity="center_horizontal"
+            android:dividerHeight="1dp"
+            android:divider="?android:divider"
+            android:drawSelectorOnTop="true"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="@dimen/design_fab_size_normal"
+            android:layout_height="@dimen/design_fab_size_normal"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="24dp"
+            android:src="@android:drawable/ic_input_add"
+            android:clickable="true"
+            android:onClick="openEditGroupDialog"
+            android:tint="?android:textColorPrimaryInverse" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

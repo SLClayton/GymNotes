@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 rep"
+            android:id="@+id/repNumber"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N/A"
+            android:id="@+id/estimated"
+            android:layout_gravity="center"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/abc_text_size_medium_material" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N/A"
+            android:id="@+id/actual"
+            android:layout_gravity="center"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="@dimen/abc_text_size_medium_material" />
+    </FrameLayout>
+
+</LinearLayout>

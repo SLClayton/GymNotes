@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#ff808080</color>
+    <color name="red">#ffff0000</color>
+    <color name="green">#ff00ff00</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="yellow">#ffffff00</color>
+    <color name="pink">#ffff00ff</color>
+    <color name="cyan">#33cece</color>
+
+
+
+
+
+
+    <color name="light_background">#FAFAFA</color>
+    <color name="light_foreground">#FFFFFF</color>
+    <color name="light_foreground2">#f5f5f5</color>
+    <color name="light_foreground3">#E0E0E0</color>
+
+    <color name="light_text_primary">#dd000000</color>
+    <color name="light_text_secondary">#89000000</color>
+    <color name="light_text_disabled">#60000000</color>
+    <color name="light_divider">#1e000000</color>
+    <color name="light_text_error">#deb71c1c</color>
+
+
+
+    <color name="dark_text_primary">#ffffff</color>
+    <color name="dark_text_secondary">#b3ffffff</color>
+    <color name="dark_text_disabled">#7fffffff</color>
+    <color name="dark_divider">#1effffff</color>
+    <color name="dark_text_error">#b3e53935</color>
+
+
+    <color name="blue_colorPrimary">#1565c0</color>
+    <color name="blue_colorPrimaryDark">#0d47a1</color>
+    <color name="blue_colorAccent">#FFC107</color>
+
+    <color name="red_colorPrimary">#c62828</color>
+    <color name="red_colorPrimaryDark">#b71c1c</color>
+    <color name="red_colorAccent">#ffab00</color>
+
+    <color name="teal_colorPrimary">#0c4c5d</color>
+    <color name="teal_colorPrimaryDark">#093743</color>
+    <color name="teal_colorAccent">#d50000</color>'
+
+    <color name="black_colorPrimary">#212121</color>
+    <color name="black_colorPrimaryDark">#000000</color>
+    <color name="black_colorAccent">#7d7d7d</color>'
+
+    <color name="pink_colorPrimary">#e91e63</color>
+    <color name="pink_colorPrimaryDark">#c2185b</color>
+    <color name="pink_colorAccent">#00BCD4</color>
+
+    <color name="green_colorPrimary">#137e12</color>
+    <color name="green_colorPrimaryDark">#10660e</color>
+    <color name="green_colorAccent">#6c6c6c</color>
+
+    <color name="navy_colorPrimary">#1a3065</color>
+    <color name="navy_colorPrimaryDark">#162954</color>
+    <color name="navy_colorAccent">#f4b21d</color>
+
+    <color name="max_colorPrimary">#810202</color>
+    <color name="max_colorPrimaryDark">#690202</color>
+    <color name="max_colorAccent">#22d762</color>
+
+    <color name="bronco_colorPrimary">#02295a</color>
+    <color name="bronco_colorPrimaryDark">#011a39</color>
+    <color name="bronco_colorAccent">#f36b25</color>
+
+
+
+
+</resources>

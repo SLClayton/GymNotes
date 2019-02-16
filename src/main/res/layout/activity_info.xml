@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="?colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/Theme.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:id="@+id/stats">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stats"
+                    android:id="@+id/textView13"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Exercises :"
+                        android:id="@+id/textView19"
+                        android:layout_alignParentStart="true"
+                        android:minWidth="120dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:id="@+id/exercises"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView19"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Workouts :"
+                        android:id="@+id/sort"
+                        android:layout_alignParentStart="true"
+                        android:minWidth="120dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:id="@+id/workouts"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/sort"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sets:"
+                        android:id="@+id/textView17"
+                        android:layout_alignParentStart="true"
+                        android:minWidth="120dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:id="@+id/sets"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView17"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Weight lifted :"
+                        android:id="@+id/textView15"
+                        android:layout_alignParentStart="true"
+                        android:minWidth="120dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:id="@+id/totalweight"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView15"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Reps :"
+                        android:id="@+id/textView23"
+                        android:layout_alignParentStart="true"
+                        android:minWidth="120dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:id="@+id/totalreps"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView23"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="20dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:id="@+id/textView16"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="App name - App Version"
+                    android:id="@+id/AppNameAndVersion"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/About"
+                    android:id="@+id/textView18"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gym Notes Pro"
+                    android:id="@+id/textView12"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Theme_advert_massage"
+                    android:id="@+id/textView31"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="5sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/where_to_find_unlock"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="5sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/color_themes_promo"
+                    android:layout_marginBottom="5sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/get_it_free"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:id="@+id/textView28"
+                    android:layout_marginBottom="5sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/download_rewards"
+                    android:onClick="openGoogleOpinionRewards"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Icons"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Icons"
+                    android:id="@+id/textView22"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Icons"
+                    android:id="@+id/textView25"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

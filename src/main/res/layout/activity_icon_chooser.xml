@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".activities.IconChooser"
+    android:orientation="vertical"
+    android:background="?android:colorBackground">
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        >
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:transitionGroup="false"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:background="?colorPrimary"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingBottom="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type :"
+            android:id="@+id/textView8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="?android:textColorPrimaryInverse"
+            android:layout_marginRight="20sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:spinnerMode="dropdown"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView8"
+            android:layout_toEndOf="@+id/textView8"
+            android:padding="5sp" />
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/gridView"
+        android:choiceMode="singleChoice"
+        android:clickable="true"
+        android:numColumns="4" />
+
+</LinearLayout>

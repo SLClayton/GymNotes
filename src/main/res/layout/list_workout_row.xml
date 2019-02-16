@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:minHeight="80dp"
+    android:clickable="false"
+    android:background="?foreground">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/setList">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NoSets"
+            android:id="@+id/emptyMessage"
+            android:layout_gravity="center"
+            android:textColor="?android:textColorPrimaryDisableOnly"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:id="@+id/seperator"
+        android:background="?android:textColorPrimaryDisableOnly"
+        android:layout_toRightOf="@+id/setList"
+        android:layout_toEndOf="@+id/setList"
+        android:layout_margin="10dp">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/workoutInfo"
+        android:layout_toRightOf="@+id/seperator"
+        android:layout_toEndOf="@+id/seperator">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mon, 12th Aug 2016"
+            android:id="@+id/Date"
+            android:textSize="18sp"
+            android:textColor="?android:textColorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(3 days ago)"
+            android:id="@+id/daysAgo"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="14sp"
+            android:layout_marginTop="1dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is a note example, it could be long or short or nothing at all or it could be this is easy."
+            android:id="@+id/Note"
+            android:textColor="?android:textColorSecondary"
+            android:textStyle="italic"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

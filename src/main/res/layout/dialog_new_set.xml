@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".dialogs.edit_set"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:background="@drawable/dialog_stroke"
+    android:padding="1dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:minWidth="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?colorPrimary"
+            android:id="@+id/TopBar"
+            android:minHeight="50dp"
+            android:weightSum="5"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/Header"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1">
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Header"
+                android:id="@+id/Header"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="?android:textColorPrimaryInverse"
+                android:textSize="25dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="3" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/Header"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/delete"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/delete_button"
+                    android:padding="5dp"
+                    android:onClick="delete"
+                    android:nestedScrollingEnabled="false"
+                    android:clickable="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/options"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal">
+
+            <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Warmup Set"
+                android:id="@+id/isWarmup"
+                android:checked="false"
+                android:onClick="warmup"
+                android:textOn="Warmup Set: Yes"
+                android:textOff="Warmup Set: No"
+                android:background="@drawable/toggle_button"
+                android:clickable="true"
+                android:textColor="@drawable/toggle_button_text"
+                android:button="@android:color/transparent" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weight"
+                    android:orientation="vertical"
+                    android:layout_alignParentStart="true"
+                    android:dividerPadding="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:id="@+id/textView3"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="15dp"
+                    android:textSize="25dp"
+                    android:layout_toRightOf="@+id/weight" />
+
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reps"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView3" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/note"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/note_text_box"
+                android:minLines="3"
+                android:gravity="top|left"
+                android:imeOptions="actionDone"
+                android:hint="Note (eg &quot;Was too easy&quot;)"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Error Message"
+                android:id="@+id/Error"
+                android:layout_gravity="center_horizontal"
+                android:textSize="10dp"
+                android:textStyle="italic"
+                android:textColor="?text_error"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:textColorPrimaryDisableOnly"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:weightSum="2"
+            android:id="@+id/Buttons">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_button"
+                android:onClick="cancel"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:id="@+id/textView2"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="?android:textColorPrimary"/>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="?android:textColorPrimaryDisableOnly" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_button"
+                android:onClick="finishButton"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Done"
+                    android:id="@+id/FinishButton"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="?android:textColorPrimary"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

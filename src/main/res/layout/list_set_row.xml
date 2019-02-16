@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="?foreground"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/main">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberHolder"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false" >
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:id="@+id/moveIcon"
+                android:src="@drawable/ic_swap_vert_black_18dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/number"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="?android:textColorPrimary"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:id="@+id/dot"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="?android:textColorPrimary"
+            android:layout_gravity="center"
+            android:linksClickable="true"
+            android:layout_toRightOf="@+id/numberHolder" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:layout_toRightOf="@+id/dot"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000.00"
+                android:id="@+id/weight"
+                android:textSize="25sp"
+                android:gravity="end"
+                android:layout_marginEnd="2sp"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginRight="2sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kg"
+                android:id="@+id/unit"
+                android:textSize="25sp"
+                android:gravity="end"
+                android:layout_marginEnd="20sp"
+                android:minWidth="30dp"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginRight="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x"
+                android:id="@+id/textView7"
+                android:textSize="25sp"
+                android:gravity="end"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginRight="5sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000"
+                android:id="@+id/reps"
+                android:textSize="25sp"
+                android:gravity="end"
+                android:minWidth="45sp"
+                android:textColor="?android:textColorPrimary" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/noteBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note:    "
+            android:id="@+id/textView10"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is a note, like wow that was easy"
+            android:id="@+id/note"
+            android:layout_weight="0.10"
+            android:textStyle="italic"
+            android:textColor="?android:textColorSecondary"
+            android:password="false" />
+    </LinearLayout>
+
+</LinearLayout>

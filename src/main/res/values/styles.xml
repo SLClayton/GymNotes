@@ -1,0 +1,200 @@
+<resources>
+
+    <!-- Base application activity theme. -->
+    <style name="ActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:textColorPrimary">@color/light_text_primary</item>
+        <item name="android:textColorSecondary">@color/light_text_secondary</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/light_text_disabled</item>
+        <item name="text_error">@color/light_text_error</item>
+
+        <item name="android:textColorPrimaryInverse">@color/dark_text_primary</item>
+        <item name="android:textColorSecondaryInverse">@color/dark_text_secondary</item>
+
+        <item name="android:colorBackground">@color/light_background</item>
+        <item name="foreground">@color/light_foreground</item>
+        <item name="foreground2">@color/light_foreground2</item>
+        <item name="foreground3">@color/light_foreground3</item>
+
+        <item name="android:divider">@color/light_divider</item>
+
+        <item name="date_toggle">@drawable/date_toggle</item>
+
+    </style>
+
+    <!-- Base application dialog theme. -->
+    <style name="DialogTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:textColorPrimary">@color/light_text_primary</item>
+        <item name="android:textColorSecondary">@color/light_text_secondary</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/light_text_disabled</item>
+        <item name="text_error">@color/light_text_error</item>
+
+        <item name="android:textColorPrimaryInverse">@color/dark_text_primary</item>
+        <item name="android:textColorSecondaryInverse">@color/dark_text_secondary</item>
+
+        <item name="android:colorBackground">@color/light_background</item>
+        <item name="foreground">@color/light_foreground</item>
+        <item name="foreground2">@color/light_foreground2</item>
+        <item name="foreground3">@color/light_foreground3</item>
+
+        <item name="android:divider">@color/light_divider</item>
+
+        <item name="date_toggle">@drawable/date_toggle</item>
+
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+    
+    <style name="ActivityTheme.blue">
+
+        <item name="colorPrimary">@color/blue_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/blue_colorPrimaryDark</item>
+        <item name="colorAccent">@color/blue_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_blue</item>
+    </style>
+    <style name="DialogTheme.blue">
+
+        <item name="colorPrimary">@color/blue_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/blue_colorPrimaryDark</item>
+        <item name="colorAccent">@color/blue_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_blue</item>
+    </style>
+
+
+
+    <style name="ActivityTheme.red">
+
+        <item name="colorPrimary">@color/red_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/red_colorPrimaryDark</item>
+        <item name="colorAccent">@color/red_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_red</item>
+    </style>
+    <style name="DialogTheme.red">
+
+        <item name="colorPrimary">@color/red_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/red_colorPrimaryDark</item>
+        <item name="colorAccent">@color/red_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_red</item>
+    </style>
+
+
+    <style name="ActivityTheme.teal">
+
+        <item name="colorPrimary">@color/teal_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/teal_colorPrimaryDark</item>
+        <item name="colorAccent">@color/teal_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_teal</item>
+    </style>
+    <style name="DialogTheme.teal">
+
+        <item name="colorPrimary">@color/teal_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/teal_colorPrimaryDark</item>
+        <item name="colorAccent">@color/teal_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_teal</item>
+    </style>
+
+
+    <style name="ActivityTheme.navy">
+
+        <item name="colorPrimary">@color/navy_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/navy_colorPrimaryDark</item>
+        <item name="colorAccent">@color/navy_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_navy</item>
+    </style>
+    <style name="DialogTheme.navy">
+
+        <item name="colorPrimary">@color/navy_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/navy_colorPrimaryDark</item>
+        <item name="colorAccent">@color/navy_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_navy</item>
+    </style>
+
+    <style name="ActivityTheme.pink">
+
+        <item name="colorPrimary">@color/pink_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/pink_colorPrimaryDark</item>
+        <item name="colorAccent">@color/pink_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_pink</item>
+    </style>
+    <style name="DialogTheme.pink">
+
+        <item name="colorPrimary">@color/pink_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/pink_colorPrimaryDark</item>
+        <item name="colorAccent">@color/pink_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_pink</item>
+    </style>
+
+    <style name="ActivityTheme.green">
+
+        <item name="colorPrimary">@color/green_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/green_colorPrimaryDark</item>
+        <item name="colorAccent">@color/green_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_green</item>
+    </style>
+    <style name="DialogTheme.green">
+
+        <item name="colorPrimary">@color/green_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/green_colorPrimaryDark</item>
+        <item name="colorAccent">@color/green_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_green</item>
+    </style>
+
+
+    <style name="ActivityTheme.max">
+
+        <item name="colorPrimary">@color/max_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/max_colorPrimaryDark</item>
+        <item name="colorAccent">@color/max_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_max</item>
+    </style>
+    <style name="DialogTheme.max">
+
+        <item name="colorPrimary">@color/max_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/max_colorPrimaryDark</item>
+        <item name="colorAccent">@color/max_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_max</item>
+    </style>
+
+    <style name="ActivityTheme.bronco">
+
+        <item name="colorPrimary">@color/bronco_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/bronco_colorPrimaryDark</item>
+        <item name="colorAccent">@color/bronco_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_bronco</item>
+    </style>
+    <style name="DialogTheme.bronco">
+
+        <item name="colorPrimary">@color/bronco_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/bronco_colorPrimaryDark</item>
+        <item name="colorAccent">@color/bronco_colorAccent</item>
+        <item name="date_toggle">@drawable/date_toggle_bronco</item>
+    </style>
+
+
+
+
+
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+</resources>

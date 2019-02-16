@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sam.gymnotes" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+
+    <application
+
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.NoActionBar"
+
+        android:allowBackup="true"
+        android:backupAgent="myBackupAgent"
+        >
+
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAINR7pqkkkX3Kxi16-ekH4lF9VJtKuO8N2qM5XEA" />
+
+
+        <activity
+            android:name=".activities.ExerciseView"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.GroupExerciseView"
+            android:label="Group"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activities.IconChooser"
+            android:label="@string/title_activity_icon_chooser"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activities.WorkoutView"
+            android:label="@string/title_activity_activity__workout_view"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activities.SetView"
+            android:label="@string/title_activity_activity__set_view"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activities.InfoView"
+            android:label="@string/title_activity_info"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activities.ThemeChooser"
+            android:label="@string/title_activity_theme_chooser"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activities.ArchivedExerciseView"
+            android:label="@string/archivedexercises"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+
+        <activity
+            android:name=".dialogs.edit_exercise"
+            android:label="dialog_new_excersise"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".dialogs.edit_group"
+            android:label="dialog_new_group"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".dialogs.are_you_sure"
+            android:label="@string/title_activity_dialog_are_you_sure"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".dialogs.edit_workout"
+            android:label="@string/title_activity_dialog_date_picker"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".dialogs.edit_set"
+            android:label="@string/title_activity_dialog_new_set"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".dialogs.edit_note"
+            android:label="@string/title_activity_dialog_edit_note"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".dialogs.ThreeOption"
+            android:label="@string/title_activity_dialog_convert"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".dialogs.theme_advert"
+            android:label="@string/title_dialog_theme_advert"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>
+
