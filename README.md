@@ -2,6 +2,8 @@
 
 *Gym Notes is temporarily suspended from the Google Play store for failing to hold a valid privacy policy. This is currently being remediated.*
 
+![banner](https://i.imgur.com/Sqj1aIE.png)
+
 Gym Notes is the simple and easy to use workout tracking app. Log your lifts, make notes and  track your progress throughout all your exercises. Workout by workout. Set by set.
 
 Key Features
