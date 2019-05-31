@@ -1,6 +1,5 @@
 # Gym Notes
 
-*Gym Notes is temporarily suspended from the Google Play store for failing to hold a valid privacy policy. This is currently being remediated.*
 
 ![banner](https://i.imgur.com/Sqj1aIE.png)
 
