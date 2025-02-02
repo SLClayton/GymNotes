@@ -3,6 +3,8 @@
 
 ![banner](https://i.imgur.com/Sqj1aIE.png)
 
+NOTE: GymNotes is currently not active on the google play store anymore. I may wish to bring it back soon but have other commitments.
+
 Gym Notes is the simple and easy to use workout tracking app. Log your lifts, make notes and  track your progress throughout all your exercises. Workout by workout. Set by set.
 
 Key Features
